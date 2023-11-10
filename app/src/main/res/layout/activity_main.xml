@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/fordhikr"
+    >
+
+
+
+
+    <Button
+        android:id="@+id/dhikr"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:text="Click on me"
+
+       android:background="@drawable/round_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/AntallDhikr"
+
+        android:background="@drawable/textview_border"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="170dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dhikr"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/reset"
+
+        android:background="@color/red"
+        android:text="Reset"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AntallDhikr"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="90dp" />
+
+    <Switch
+        android:id="@+id/sound"
+        android:text="Sound:"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="100dp"
+
+      >
+
+    </Switch>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
